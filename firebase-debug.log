@@ -1,0 +1,82 @@
+[debug] [2023-05-30T22:37:48.465Z] ----------------------------------------------------------------------
+[debug] [2023-05-30T22:37:48.506Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\jsima\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-05-30T22:37:48.509Z] CLI Version:   12.2.1
+[debug] [2023-05-30T22:37:48.511Z] Platform:      win32
+[debug] [2023-05-30T22:37:48.512Z] Node Version:  v18.16.0
+[debug] [2023-05-30T22:37:48.758Z] Time:          Tue May 30 2023 17:37:48 GMT-0500 (hora estándar de Colombia)
+[debug] [2023-05-30T22:37:48.759Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-05-30T22:37:49.438Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-05-30T22:37:49.442Z] > authorizing via signed-in user (jsimarrapolo@gmail.com)
+[debug] [2023-05-30T22:37:49.450Z] [iam] checking project fumirats-6f727 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-05-30T22:37:49.490Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/fumirats-6f727:testIamPermissions [none]
+[debug] [2023-05-30T22:37:49.491Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/fumirats-6f727:testIamPermissions x-goog-quota-user=projects/fumirats-6f727
+[debug] [2023-05-30T22:37:49.498Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/fumirats-6f727:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-05-30T22:37:50.977Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/fumirats-6f727:testIamPermissions 200
+[debug] [2023-05-30T22:37:50.978Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/fumirats-6f727:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-05-30T22:37:50.983Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/fumirats-6f727 [none]
+[debug] [2023-05-30T22:37:51.418Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/fumirats-6f727 200
+[debug] [2023-05-30T22:37:51.419Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/fumirats-6f727 {"projectId":"fumirats-6f727","projectNumber":"339772390781","displayName":"fumirats","name":"projects/fumirats-6f727","resources":{"hostingSite":"fumirats-6f727"},"state":"ACTIVE","etag":"1_123fe424-aa02-4adb-b198-14b2b34c9d7e"}
+[info] 
+[info] === Deploying to 'fumirats-6f727'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2023-05-30T22:37:51.486Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/fumirats-6f727/versions [none]
+[debug] [2023-05-30T22:37:51.486Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/fumirats-6f727/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2023-05-30T22:37:52.495Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/fumirats-6f727/versions 200
+[debug] [2023-05-30T22:37:52.496Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/fumirats-6f727/versions {"name":"projects/339772390781/sites/fumirats-6f727/versions/fff9fb8e20d15407","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[fumirats-6f727]: beginning deploy... 
+[debug] [2023-05-30T22:39:45.098Z] Error: EPERM: operation not permitted, scandir 'C:/Users/jsima/AppData/Local/Archivos temporales de Internet'
+    at Object.readdirSync (node:fs:1452:3)
+    at GlobSync._readdir (C:\Users\jsima\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:288:46)
+    at GlobSync._readdirInGlobStar (C:\Users\jsima\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:245:17)
+    at GlobSync._readdir (C:\Users\jsima\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:276:17)
+    at GlobSync._processReaddir (C:\Users\jsima\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:137:22)
+    at GlobSync._process (C:\Users\jsima\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:132:10)
+    at GlobSync._processGlobStar (C:\Users\jsima\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:380:10)
+    at GlobSync._process (C:\Users\jsima\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:130:10)
+    at GlobSync._processGlobStar (C:\Users\jsima\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:383:10)
+    at GlobSync._process (C:\Users\jsima\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:130:10)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-05-30T22:41:24.209Z] ----------------------------------------------------------------------
+[debug] [2023-05-30T22:41:24.220Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\jsima\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only hosting
+[debug] [2023-05-30T22:41:24.223Z] CLI Version:   12.2.1
+[debug] [2023-05-30T22:41:24.225Z] Platform:      win32
+[debug] [2023-05-30T22:41:24.226Z] Node Version:  v18.16.0
+[debug] [2023-05-30T22:41:24.236Z] Time:          Tue May 30 2023 17:41:24 GMT-0500 (hora estándar de Colombia)
+[debug] [2023-05-30T22:41:24.237Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-05-30T22:41:24.911Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-05-30T22:41:24.915Z] > authorizing via signed-in user (jsimarrapolo@gmail.com)
+[debug] [2023-05-30T22:41:24.915Z] [iam] checking project fumirats-6f727 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-05-30T22:41:24.934Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/fumirats-6f727:testIamPermissions [none]
+[debug] [2023-05-30T22:41:24.935Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/fumirats-6f727:testIamPermissions x-goog-quota-user=projects/fumirats-6f727
+[debug] [2023-05-30T22:41:24.944Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/fumirats-6f727:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-05-30T22:41:25.938Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/fumirats-6f727:testIamPermissions 200
+[debug] [2023-05-30T22:41:25.939Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/fumirats-6f727:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-05-30T22:41:25.951Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/fumirats-6f727 [none]
+[debug] [2023-05-30T22:41:26.377Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/fumirats-6f727 200
+[debug] [2023-05-30T22:41:26.377Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/fumirats-6f727 {"projectId":"fumirats-6f727","projectNumber":"339772390781","displayName":"fumirats","name":"projects/fumirats-6f727","resources":{"hostingSite":"fumirats-6f727"},"state":"ACTIVE","etag":"1_123fe424-aa02-4adb-b198-14b2b34c9d7e"}
+[info] 
+[info] === Deploying to 'fumirats-6f727'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2023-05-30T22:41:26.412Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/fumirats-6f727/versions [none]
+[debug] [2023-05-30T22:41:26.412Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/fumirats-6f727/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2023-05-30T22:41:27.378Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/fumirats-6f727/versions 200
+[debug] [2023-05-30T22:41:27.379Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/fumirats-6f727/versions {"name":"projects/339772390781/sites/fumirats-6f727/versions/567cb21ae7fb506a","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[fumirats-6f727]: beginning deploy... 
+[debug] [2023-05-30T22:42:59.113Z] Error: EPERM: operation not permitted, scandir 'C:/Users/jsima/AppData/Local/Archivos temporales de Internet'
+    at Object.readdirSync (node:fs:1452:3)
+    at GlobSync._readdir (C:\Users\jsima\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:288:46)
+    at GlobSync._readdirInGlobStar (C:\Users\jsima\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:245:17)
+    at GlobSync._readdir (C:\Users\jsima\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:276:17)
+    at GlobSync._processReaddir (C:\Users\jsima\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:137:22)
+    at GlobSync._process (C:\Users\jsima\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:132:10)
+    at GlobSync._processGlobStar (C:\Users\jsima\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:380:10)
+    at GlobSync._process (C:\Users\jsima\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:130:10)
+    at GlobSync._processGlobStar (C:\Users\jsima\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:383:10)
+    at GlobSync._process (C:\Users\jsima\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:130:10)
+[error] 
+[error] Error: An unexpected error has occurred.
