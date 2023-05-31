@@ -6,6 +6,7 @@
 	 <link rel="profile" href="https://gmpg.org/xfn/11"> 
 	 <title>Fumirats &ndash; Fumirats</title>
 <meta name="robots" content="max-image-preview:large">
+<script src="scrollreveal.js"></script>
 <link rel="dns-prefetch" href="http://fonts.googleapis.com">
 <link rel="alternate" type="application/rss+xml" title="Fumirats &raquo; Feed" href="feed/index.html">
 <link rel="alternate" type="application/rss+xml" title="Fumirats &raquo; RSS de los comentarios" href="comments/feed/index.html">
@@ -176,6 +177,10 @@ flexibility(document.documentElement);
 #wpforms-submit-203.wpforms-submit:hover {
   background-color: darkred;
 }
+.tamaño {
+  visibility: hidden;
+}
+
 
 		</style>
 		<script>(function(){this._N2=this._N2||{_r:[],_d:[],r:function(){this._r.push(arguments)},d:function(){this._d.push(arguments)}}}).call(window);!function(a){a.indexOf("Safari")>0&&-1===a.indexOf("Chrome")&&document.documentElement.style.setProperty("--ss-safari-fix-225962","1px")}(navigator.userAgent);</script><script src="n2.min.js" defer async></script>
@@ -302,9 +307,9 @@ flexibility(document.documentElement);
 					</div>
 		</div>
 							</div>
-		</section>
+		</section class="elemento">
 				<section class="elementor-section elementor-top-section elementor-element elementor-element-12c144e elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="12c144e" data-element_type="section">
-						<div class="elementor-container elementor-column-gap-default">
+						<div class="elementor-container efecto elementor-column-gap-default">
 					<div class="elementor-column elementor-col-66 elementor-top-column elementor-element elementor-element-b06beaf" data-id="b06beaf" data-element_type="column">
 			<div class="elementor-widget-wrap elementor-element-populated">
 								<div class="elementor-element elementor-element-c410673 elementor-widget elementor-widget-heading" data-id="c410673" data-element_type="widget" data-widget_type="heading.default">
@@ -328,7 +333,7 @@ flexibility(document.documentElement);
 							</div>
 		</section>
 				<section class="elementor-section elementor-top-section elementor-element elementor-element-1e68418 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="1e68418" data-element_type="section">
-						<div class="elementor-container elementor-column-gap-default">
+						<div class="elementor-container efecto elementor-column-gap-default">
 					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-638cb7c" data-id="638cb7c" data-element_type="column">
 			<div class="elementor-widget-wrap elementor-element-populated">
 				
@@ -341,7 +346,7 @@ flexibility(document.documentElement);
 							</div>
 		</section>
 				<section class="elementor-section elementor-top-section elementor-element elementor-element-69b6ee6 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="69b6ee6" data-element_type="section">
-						<div class="elementor-container elementor-column-gap-default">
+						<div class="elementor-container efecto elementor-column-gap-default">
 					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-e01b656" data-id="e01b656" data-element_type="column">
 			<div class="elementor-widget-wrap elementor-element-populated">
 								<div class="elementor-element elementor-element-9549c8e elementor-widget__width-initial elementor-widget elementor-widget-html" data-id="9549c8e" data-element_type="widget" data-widget_type="html.default">
@@ -457,9 +462,18 @@ flexibility(document.documentElement);
 	}
 	
 	@media (min-width: 300px) and (max-width:700px) {
-			#hotspot-125 .hotspots-container{
+		body{
+			margin:0;
+			padding:0;
+		}
+		.hotspots-image-container,.tamaño{
+				width: 100%;
 				display:inline-block;
 			}
+			.hotspots-image-container{
+				visibility: hidden;
+				
+			} 
 		}
 
 		
@@ -487,7 +501,7 @@ flexibility(document.documentElement);
 
 	<div class="hotspots-container   event-click" id="hotspot-125" data-trigger="click" style=" display:flex; padding: 0; margin:0; width:auto;position:static;">
 		
-				<div class="hotspots-placeholder" id="content-hotspot-125">
+				<div class="hotspots-placeholder  oculta" id="content-hotspot-125">
 		<div class="hotspot-initial">
 									<h2 class="hotspot-title">
 							</h2>
@@ -511,35 +525,35 @@ flexibility(document.documentElement);
 
 		
 					
-						<div class="hotspot-info" id="hotspot-hotspot-125-0">
+						<div class="hotspot-info tamaño" id="hotspot-hotspot-125-0">
 				
 				<h2 class="hotspot-title">Paso 1: An&aacute;lisis de las posibles plagas</h2>								<div class="hotspot-content">
 					<p>En esta etapa, un equipo especializado en el control de plagas se encarga de realizar un an&aacute;lisis detallado del entorno y las condiciones espec&iacute;ficas del &aacute;rea a tratar.</p>
 				</div>
 			</div>
 					
-						<div class="hotspot-info" id="hotspot-hotspot-125-1">
+						<div class="hotspot-info  tamaño" id="hotspot-hotspot-125-1">
 				
 				<h2 class="hotspot-title">Paso 2: Establecer las medidas de control de plagas</h2>								<div class="hotspot-content">
 					<p>Una vez que se ha realizado el an&aacute;lisis exhaustivo de las posibles plagas, el equipo especializado en control de plagas procede a dise&ntilde;ar y establecer las medidas espec&iacute;ficas para controlar y erradicar las infestaciones.</p>
 				</div>
 			</div>
 					
-						<div class="hotspot-info" id="hotspot-hotspot-125-2">
+						<div class="hotspot-info  tamaño" id="hotspot-hotspot-125-2">
 				
 				<h2 class="hotspot-title">Paso 2.1: M&eacute;todos indirectos o pasivos</h2>								<div class="hotspot-content">
 					<p>En esta etapa, una vez que se han establecido las medidas de control de plagas, se lleva a cabo la implementaci&oacute;n de estrategias indirectas y pasivas con el objetivo de prevenir la presencia y la propagaci&oacute;n de las plagas detectadas.</p>
 				</div>
 			</div>
 					
-						<div class="hotspot-info" id="hotspot-hotspot-125-3">
+						<div class="hotspot-info  tamaño" id="hotspot-hotspot-125-3">
 				
 				<h2 class="hotspot-title">Paso 2.2: M&eacute;todos directos o activos</h2>								<div class="hotspot-content">
 					<p>Despu&eacute;s de que se han establecido las medidas de control de plagas y se han implementado estrategias indirectas y pasivas, se pasa a emplear m&eacute;todos directos o activos para combatir y erradicar las plagas de manera m&aacute;s espec&iacute;fica y focalizada.</p>
 				</div>
 			</div>
 					
-						<div class="hotspot-info" id="hotspot-hotspot-125-4">
+						<div class="hotspot-info  tamaño" id="hotspot-hotspot-125-4">
 				
 				<h2 class="hotspot-title">Paso 3: Comprobaci&oacute;n</h2>								<div class="hotspot-content">
 					<p>Tras establecer medidas de control de plagas y aplicar estrategias indirectas, se utilizan m&eacute;todos directos para combatir y eliminar plagas espec&iacute;ficas. Si se confirma su presencia, se procede a la fumigaci&oacute;n. En caso contrario, no se realiza. El proceso cumple con regulaciones y normativas de seguridad.</p>
@@ -548,8 +562,6 @@ flexibility(document.documentElement);
 			</sript></div>
 
 												
-
-
 
 			
 
@@ -675,12 +687,12 @@ var drawattentionData = {"isLoggedIn":"1","closeLabel":"Close","isAdmin":"1"};
 		</article></main></div>
 							</div>
 		
-				<section class="elementor-section elementor-top-section elementor-element elementor-element-2e65393 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="2e65393" data-element_type="section" data-settings='{"background_background":"gradient"}'>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-2e65393 elementor-section-boxed elementor-section-height-default elementor-section-height-default elemento"data-id="2e65393" data-element_type="section" data-settings='{"background_background":"gradient"}'>
 						<div class="elementor-container elementor-column-gap-default">
 					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-93b095c" data-id="93b095c" data-element_type="column">
 			<div class="elementor-widget-wrap elementor-element-populated" style="margin-top:30px">
 				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d254508.39472143116!2d-74.27262448479925!3d4.648620642024533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9bfd2da6cb29%3A0x239d635520a33914!2zQm9nb3TDoQ!5e0!3m2!1ses-419!2sco!4v1685428094547!5m2!1ses-419!2sco" width="450" height="550" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-								<div class="elementor-element elementor-element-30ae7fb animated-slow elementor-invisible elementor-widget elementor-widget-google_maps" data-id="30ae7fb" data-element_type="widget" data-settings='{"_animation":"zoomIn","_animation_delay":0}' data-widget_type="google_maps.default">
+								<div class="elementor-element elementor-element-30ae7fb animated-slow elementor-invisible elementor-widget elementor-widget-google_maps" data-id="30ae7fb" data-element_type="widget" data-widget_type="google_maps.default">
 				<div class="elementor-widget-container">
 					<div class="elementor-custom-embed">
 						
@@ -691,7 +703,7 @@ var drawattentionData = {"isLoggedIn":"1","closeLabel":"Close","isAdmin":"1"};
 		</div>
 				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-0605ae5" data-id="0605ae5" data-element_type="column">
 			<div class="elementor-widget-wrap elementor-element-populated">
-								<div class="elementor-element elementor-element-f0e4d9a animated-slow elementor-invisible elementor-widget elementor-widget-wpforms" data-id="f0e4d9a" data-element_type="widget" data-settings='{"_animation":"slideInUp"}' data-widget_type="wpforms.default">
+								<div class="elementor-element elementor-element-f0e4d9a animated-slow elementor-invisible elementor-widget elementor-widget-wpforms" data-id="f0e4d9a" data-element_type="widget" data-widget_type="wpforms.default">
 				<div class="elementor-widget-container">
 			<div class="wpforms-container wpforms-container-full wpforms-render-modern" id="wpforms-203"><form id="wpforms-form-203" class="wpforms-validate wpforms-form wpforms-ajax-form" data-formid="203" method="post" enctype="multipart/form-data" action="" data-token="493c019531c5d378499bdc1947822d4d"><div class="wpforms-head-container"><div class="wpforms-title">Contactanos</div></div><noscript class="wpforms-error-noscript">Por favor, activa JavaScript en tu navegador para completar este formulario.</noscript><div class="wpforms-hidden" id="wpforms-error-noscript">Por favor, activa JavaScript en tu navegador para completar este formulario.</div><div class="wpforms-field-container"><div id="wpforms-203-field_0-container" class="wpforms-field wpforms-field-name" data-field-id="0"><label class="wpforms-field-label wpforms-label-hide" for="wpforms-203-field_0" aria-hidden="false">Nombre <span class="wpforms-required-label" aria-hidden="true">*</span></label><input type="text" id="wpforms-203-field_0" class="wpforms-field-medium wpforms-field-required" name="wpforms[fields][0]" placeholder="Nombre" aria-errormessage="wpforms-203-field_0-error" required></div><div id="wpforms-203-field_1-container" class="wpforms-field wpforms-field-email" data-field-id="1"><label class="wpforms-field-label wpforms-label-hide" for="wpforms-203-field_1" aria-hidden="false">Correo electr&oacute;nico <span class="wpforms-required-label" aria-hidden="true">*</span></label><input type="email" id="wpforms-203-field_1" class="wpforms-field-medium wpforms-field-required" name="wpforms[fields][1]" placeholder="Correo" spellcheck="false" aria-errormessage="wpforms-203-field_1-error" required></div><div id="wpforms-203-field_3-container" class="wpforms-field wpforms-field-number" data-field-id="3"><label class="wpforms-field-label wpforms-label-hide" for="wpforms-203-field_3" aria-hidden="false">Whatsapp</label><input type="number" pattern="\d*" id="wpforms-203-field_3" class="wpforms-field-medium" name="wpforms[fields][3]" placeholder="Whatsapp" aria-errormessage="wpforms-203-field_3-error"></div><div id="wpforms-203-field_2-container" class="wpforms-field wpforms-field-textarea" data-field-id="2"><label class="wpforms-field-label wpforms-label-hide" for="wpforms-203-field_2" aria-hidden="false">Asunto <span class="wpforms-required-label" aria-hidden="true">*</span></label><textarea id="wpforms-203-field_2" class="wpforms-field-medium wpforms-field-required wpforms-limit-characters-enabled" data-form-id="203" data-field-id="2" data-text-limit="100" name="wpforms[fields][2]" placeholder="Describe el motivo por el cual deseas contactarnos" aria-errormessage="wpforms-203-field_2-error" maxlength="100" required></textarea></div></div><!-- .wpforms-field-container --><div class="wpforms-submit-container"><input type="hidden" name="wpforms[id]" value="203"><input type="hidden" name="wpforms[author]" value="1"><input type="hidden" name="wpforms[post_id]" value="41"><button type="submit" name="wpforms[submit]" id="wpforms-submit-203" class="wpforms-submit" data-alt-text="Enviando..." data-submit-text="Enviar" aria-live="assertive" value="wpforms-submit">Enviar</button><img decoding="async" loading="lazy" src="submit-spin.svg" class="wpforms-submit-spinner" style="display: none;" width="26" height="26" alt="Cargando"></div></form></div>  <!-- .wpforms-container -->		</div>
 				</div>
@@ -815,6 +827,7 @@ var wpforms_settings = {"val_required":"Este campo es obligatorio.","val_email":
 	const app = initializeApp(firebaseConfig);
 	const analytics = getAnalytics(app);
   </script>
+  <script src="scrool.js"></script>
 	</body>
 </html>
 <!-- Powered by Staatic (https://staatic.com/) -->
